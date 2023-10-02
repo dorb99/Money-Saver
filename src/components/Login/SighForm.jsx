@@ -44,14 +44,26 @@ function SighForm() {
           <p style={{ color: "red" }}>Password is required</p>
         )}
         <label className="label_login" htmlFor="monthly_budget">
-          Monthly budget:
+          Birthday:
         </label>
         <input
+        type="date"
           className="input_login"
-          {...register("budget", { required: true, maxLength: 8 })}
+          {...register("birthday", { required: true })}
         />
-        {errors.budget && (
-          <p style={{ color: "red" }}>monthly budget is required</p>
+        {errors.birthday && (
+          <p style={{ color: "red" }}>birthday is required</p>
+        )}
+        <label className="label_login" htmlFor="monthly_budget">
+          Email:
+        </label>
+        <input
+        type="email"
+          className="input_login"
+          {...register("email", { required: true })}
+        />
+        {errors.email && (
+          <p style={{ color: "red" }}>email is required</p>
         )}
         <input className="submit_login" type="submit" value="Submit" />
         :

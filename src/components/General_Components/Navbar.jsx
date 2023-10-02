@@ -7,27 +7,25 @@ function Navbar() {
   const { user, setUser } = useContext(UserContext);
   return (
     <header className="navbar">
-        {user ? (
+      {user ? (
+        <>
           <Link to="/UserHome">
             <img
-            id="right_btn"
+              id="right_btn"
               src="./public\images\Home_btn.png"
               alt="HomePage"
               width="50px"
             />
           </Link>
-        ) : (
-          <Link to="/">
-            <img
-              src="./public\images\Home_btn.png"
-              alt="HomePage"
-              width="50px"
-            />
+          <Link to="../" onClick={() => setUser("")}>
+            Log out
           </Link>
-        )}
-      <Link to="../" onClick={()=>setUser("")}>
-        Log out
-      </Link>
+        </>
+      ) : (
+        <Link to="/">
+          <img src="./public\images\Home_btn.png" alt="HomePage" width="50px" />
+        </Link>
+      )}
     </header>
   );
 }
