@@ -1,0 +1,56 @@
+Budget tracker:
+Functionalities:
+● Add and re	move transactions.
+● View current balance and transaction history.
+● View reports on spending by category or over time.
+● Edit categories and transaction details.
+● Import and export data.
+
+How to:
+1. Set up your development environment:
+To get started, you'll need to install the tools and dependencies
+you'll be using for your project.
+
+2. Design the layout and user interface:
+Next, you'll need to decide on the layout and design of your app.
+This might involve creating designs to visualize the different
+screens and features of the app.
+You'll also need to consider what information you want to
+display to the user and how you want to present it.
+
+3. Set up the mock-data:
+Depending on your needs, you may need to set up a data
+service to store and manage the data for your budget tracker.
+For example, JSON file or Context file that contains pre-data
+
+4. Build the front-end: Once you have the mock data in place, you
+can start building the front-end of the app.
+This might involve creating components to display the different
+screens of the app, such as the home screen, the add
+transaction screen, and the reports screen.
+You'll also need to write code to interact with the back-end,
+such as retrieving and saving data to the database (or mock
+data).
+
+To build the home screen, you might create a Home component that
+displays the current balance and a list of recent transactions.
+To build the add transaction screen, you might create an
+AddTransaction component that includes form fields for the user to
+enter the transaction details.
+You could use the useState hook to manage the form data in the
+component's state, and use a form submission event handler to send
+the data to the context.
+To build the reports screen, you might create a Reports component
+that displays charts and graphs showing the user's spending by
+category or over time.
+You could use a library such as Chart.js to create the charts, and
+pass the data as props from the parent component or from the
+context file.
+
+
+
+
+
+-navlink for user/guess
+- who are we page
+- a default for the chart:  stuff about the expences: what category the most, biggest expence...
